@@ -189,12 +189,30 @@
         </section>
         <br>
         <br>
-        <!-- Submit Button -->
-        <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">
-            <i class="fa fa-check-circle" aria-hidden="true"></i>
-            Submit
-        </button>
+        <div class="modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title"></h4>
+                        </div>
+                        <div class="modal-body text-center">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      
+      <!-- Submit Button -->
+      <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">
+          <i class="fa fa-check-circle" aria-hidden="true"></i>
+          Submit
+      </button>
+     
         <hr>
+
         <footer class="footer">
             <div class="container">
                 <p>
@@ -205,7 +223,15 @@
         </footer>
     </div>
 
-    </div>
+   
+
+<script>
+   $('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
+</script>
+
+
 </body>
 
 </html>

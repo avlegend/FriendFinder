@@ -35,7 +35,7 @@ module.exports = (app) => {
 
 
       }
-      //We ahve completed a full cycle of comparing scores BUT we have yet to move on tomt he next obect
+      //We have completed a full cycle of comparing scores BUT we have yet to move on to the next obect
       if (!currentLUser) {
         currentLUser = friends[i];
         currentLScore = counter;
